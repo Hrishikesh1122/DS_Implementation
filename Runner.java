@@ -9,16 +9,23 @@ package com.hrishikesh.linkedlist;
 public class Runner {
 
 	public static void main(String[] args) {
-		MyLinkedList numbers = new MyLinkedList();
+		MyLinkedList<Integer> numbers = new MyLinkedList<>();
 		numbers.add(70);
 		numbers.add(30);
 		numbers.add(56);
 		numbers.add(85);
+		numbers.add(4,49);
 		numbers.find(30);
 		numbers.show();
 		numbers.delete(1);
 		numbers.show();
 		
+		MyLinkedList<String> strings = new MyLinkedList<>();
+		strings.add("Hello");
+		strings.add("World");
+		strings.add("!!!");
+		strings.show();
+		strings.find("Hello");
 		
 	}
 

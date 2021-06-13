@@ -9,7 +9,7 @@ package com.hrishikesh.linkedlist;
 /**
  *Class Node to simulate node in a linked list
  */
-public class Node {
-  int data;
-  Node next;
+public class Node<E> {
+  E data;
+  Node<E> next;
 }
