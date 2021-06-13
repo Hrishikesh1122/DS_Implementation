@@ -16,6 +16,8 @@ public class Runner {
 		numbers.show();
 		numbers.add(2,35);
 		numbers.show();
+		numbers.deleteFirst();
+		numbers.show();
 	}
 
 }

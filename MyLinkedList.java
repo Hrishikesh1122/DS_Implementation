@@ -55,6 +55,12 @@ public class MyLinkedList  {
 		
 		
 	}
+	/**
+	 * Method to delete first element of linked list
+	 */
+	public void deleteFirst() {
+		head=head.next;
+	}
 	
 	/**
 	 * Method to print all elements of linked list
