@@ -27,6 +27,9 @@ public class Runner {
 		strings.show();
 		strings.find("Hello");
 		
+		MyStack<Integer> stack = new MyStack<>();
+		stack.push(10);
+		
 	}
 
 }
