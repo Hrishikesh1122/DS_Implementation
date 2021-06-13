@@ -32,15 +32,42 @@ public class MyLinkedList  {
 	}
 	
 	/**
+	 * Method to add element at an index 
+	 * @param index
+	 * @param data
+	 */
+	public void add(int index,int data) {
+		Node newNode = new Node();
+		newNode.data=data;
+		newNode.next=null;
+		
+		if(index == 0) {
+			newNode.next=head;
+			head=newNode;
+		}else {
+			Node temp = head;
+			for(int i=0;i<(index-1);i++) {
+				temp=temp.next;
+			}
+			newNode.next=temp.next;
+			temp.next=newNode;
+		}
+		
+		
+	}
+	
+	/**
 	 * Method to print all elements of linked list
 	 */
 	public void show() {
 		Node temp = head;
+		System.out.println();
+		System.out.print("[ ");
 		while (temp.next != null) {
-			System.out.println(temp.data);
+			System.out.print(temp.data+ " ");
 			temp = temp.next;
 		}
-		System.out.println(temp.data);
+		System.out.print(temp.data+" ]");
 	}
 	
 	

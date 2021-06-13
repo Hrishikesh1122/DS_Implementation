@@ -14,7 +14,8 @@ public class Runner {
 		numbers.add(30);
 		numbers.add(56);
 		numbers.show();
-		System.out.println("success");
+		numbers.add(2,35);
+		numbers.show();
 	}
 
 }
