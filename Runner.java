@@ -27,6 +27,14 @@ public class Runner {
 		strings.show();
 		strings.find("Hello");
 		
+		MyStack<Integer> stack = new MyStack<>();
+		stack.push(70);
+		stack.push(30);
+		stack.push(56);
+		System.out.println(stack.size());
+		stack.pop();	
+		System.out.println(stack.size());
+		
 	}
 
 }
