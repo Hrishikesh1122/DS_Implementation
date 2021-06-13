@@ -17,18 +17,32 @@ public class MyLinkedList  {
 	public void add(int data) {
 		Node newNode = new Node();
 		newNode.data=data;
+		newNode.next=null;
 		
 		if(head==null) {
 			head = newNode;
 		}
 		else {
-			Node node = head;
-			while(node.next !=null) {
-				node=node.next;
+			Node temp = head;
+			while(temp.next !=null) {
+				temp=temp.next;
 			}
-			node.next=newNode;
+			temp.next=newNode;
 		}
 	}
+	
+	/**
+	 * Method to print all elements of linked list
+	 */
+	public void show() {
+		Node temp = head;
+		while (temp.next != null) {
+			System.out.println(temp.data);
+			temp = temp.next;
+		}
+		System.out.println(temp.data);
+	}
+	
 	
 
 }

@@ -10,9 +10,10 @@ public class Runner {
 
 	public static void main(String[] args) {
 		MyLinkedList numbers = new MyLinkedList();
+		numbers.add(70);
 		numbers.add(30);
 		numbers.add(56);
-		numbers.add(70);
+		numbers.show();
 		System.out.println("success");
 	}
 
