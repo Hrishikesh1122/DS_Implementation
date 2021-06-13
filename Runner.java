@@ -18,6 +18,10 @@ public class Runner {
 		numbers.find(30);
 		numbers.show();
 		numbers.delete(1);
+		numbers.add(54);
+		numbers.add(1);
+		numbers.show();
+		numbers.sort();
 		numbers.show();
 		
 		MyLinkedList<String> strings = new MyLinkedList<>();
@@ -26,6 +30,8 @@ public class Runner {
 		strings.add("!!!");
 		strings.show();
 		strings.find("Hello");
+		strings.sort();
+		strings.show();
 		
 		MyStack<Integer> stack = new MyStack<>();
 		stack.push(70);

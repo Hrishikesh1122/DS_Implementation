@@ -8,7 +8,7 @@ package com.hrishikesh.linkedlist;
  * @since 12-06-2021
  *
  ************************************************************/
-public class MyLinkedList<E>{
+public class MyLinkedList<E> {
 	Node<E> head;
 
 	/**
@@ -78,6 +78,7 @@ public class MyLinkedList<E>{
 
 	/**
 	 * Delete the element based on its index value in linked list
+	 * 
 	 * @param index of the element to be deleted
 	 */
 	public void delete(int index) {
@@ -136,6 +137,35 @@ public class MyLinkedList<E>{
 			temp = temp.next;
 		}
 		System.out.print(temp.data + " ]");
+	}
+
+	/**
+	 * Sorts the linked list in ascending order
+	 * @param <E>
+	 */
+	@SuppressWarnings("hiding")
+	public <E extends Comparable<E>> void sort() {
+		@SuppressWarnings("unchecked")
+		Node<E> current = (Node<E>) head;
+		Node<E> index = null;
+		E temp;
+
+		while (current != null) {
+
+			index = current.next;
+
+			while (index != null) {
+
+				if ((current.data).compareTo((index.data)) > 0) {
+					temp = current.data;
+					current.data = index.data;
+					index.data = temp;
+				}
+				index = index.next;
+			}
+			current = current.next;
+		}
+
 	}
 
 }
