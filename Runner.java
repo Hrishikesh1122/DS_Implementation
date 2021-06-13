@@ -13,13 +13,11 @@ public class Runner {
 		numbers.add(70);
 		numbers.add(30);
 		numbers.add(56);
+		numbers.add(85);
+		numbers.find(30);
 		numbers.show();
-		numbers.add(2,35);
-		numbers.show();
-		numbers.deleteFirst();
-		numbers.show();
-		numbers.deleteLast();
-		numbers.show();
+		
+		
 	}
 
 }

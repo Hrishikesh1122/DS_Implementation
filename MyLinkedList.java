@@ -72,6 +72,36 @@ public class MyLinkedList  {
 		temp.next=null;
 		
 	}
+
+	/**
+	 * Check if element is present in linked list or not
+	 * @param element to find in linked list
+	 * Prints index at which element is found
+	 */
+	public void find(int element) {
+		Node temp = head;
+		boolean check = true;
+		int i = 0;
+		while (temp.next != null) {
+			if (temp.data == element) {
+				System.out.println("Found " + element + " at index " + i);
+				check = false;
+				break;
+			} else {
+				i++;
+			}
+			temp = temp.next;
+		}
+		while (check) {
+			i++;
+			if (temp.data == element) {
+				System.out.println("Found " + element + " at index " + i);
+			} else {
+				System.out.println("Not found");
+			}
+			check=false;
+		}
+	}
 	
 	/**
 	 * Method to print all elements of linked list
