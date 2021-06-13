@@ -18,6 +18,8 @@ public class Runner {
 		numbers.show();
 		numbers.deleteFirst();
 		numbers.show();
+		numbers.deleteLast();
+		numbers.show();
 	}
 
 }

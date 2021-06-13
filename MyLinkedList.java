@@ -61,6 +61,17 @@ public class MyLinkedList  {
 	public void deleteFirst() {
 		head=head.next;
 	}
+	/**
+	 * Method to delete last element
+	 */
+	public void deleteLast() {
+		Node temp = head;
+		while(temp.next.next !=null) {
+			temp=temp.next;
+		}
+		temp.next=null;
+		
+	}
 	
 	/**
 	 * Method to print all elements of linked list
