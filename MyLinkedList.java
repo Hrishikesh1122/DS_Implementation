@@ -31,6 +31,18 @@ public class MyLinkedList<E> {
 			temp.next = newNode;
 		}
 	}
+	
+	/**
+	 * Adds data at start
+	 * @param data
+	 */
+	public void addAtStart(E data) {
+		Node<E> newNode = new Node<>();
+		newNode.data = data;
+		newNode.next = null;
+		newNode.next = head;
+		head = newNode;
+	}
 
 	/**
 	 * Method to add element at an index

@@ -1,6 +1,6 @@
 package com.hrishikesh.linkedlist;
 /************************************************************
- * Purpose Linked List implementation
+ * Purpose : Linked List implementation
  * @author Hrishikesh Ugavekar
  * @Version 1.0
  * @since 12-06-2021
@@ -10,6 +10,11 @@ public class Runner {
 
 	public static void main(String[] args) {
 		MyLinkedList<Integer> numbers = new MyLinkedList<>();
+		numbers.addAtStart(70);
+		numbers.addAtStart(30);
+		numbers.addAtStart(56);
+		numbers.show();
+		System.out.println();
 		numbers.add(70);
 		numbers.add(30);
 		numbers.add(56);
@@ -17,6 +22,7 @@ public class Runner {
 		numbers.add(4,49);
 		numbers.find(30);
 		numbers.show();
+		System.out.println();
 		numbers.delete(1);
 		numbers.add(54);
 		numbers.add(1);
@@ -29,9 +35,11 @@ public class Runner {
 		strings.add("World");
 		strings.add("!!!");
 		strings.show();
+		System.out.println();
 		strings.find("Hello");
-		strings.sort();
+		strings.sort();	
 		strings.show();
+		System.out.println();
 		
 		MyStack<Integer> stack = new MyStack<>();
 		stack.push(70);
